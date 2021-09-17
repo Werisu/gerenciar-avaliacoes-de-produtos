@@ -27,3 +27,5 @@
 /home/ti/DevReviews.API/obj/Debug/net5.0/ref/DevReviews.API.dll
 /home/ti/DevReviews.API/obj/Debug/net5.0/DevReviews.API.pdb
 /home/ti/DevReviews.API/obj/Debug/net5.0/DevReviews.API.genruntimeconfig.cache
+/home/ti/DevReviews.API/bin/Debug/net5.0/AutoMapper.dll
+/home/ti/DevReviews.API/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
