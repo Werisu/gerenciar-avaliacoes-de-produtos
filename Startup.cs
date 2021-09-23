@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,7 +32,7 @@ namespace DevReviews.API
             var ConfigurationString = Configuration.GetValue<String>("DevReviewsCn");
             
             // Transient, Scoped, Singleton
-            services.AddSingleton<DevReviewsDbContext>();
+            services.AddDbContext<DevReviewsDbContext>(o => o.UseSqlServer(ConfigurationString));
 
             services.AddAutoMapper(typeof(ProductProfile));
 
