@@ -5,6 +5,7 @@ using DevReviews.API.Entities;
 using DevReviews.API.Models;
 using DevReviews.API.Persistence;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DevReviews.API.Controllers
 {
@@ -44,7 +45,7 @@ namespace DevReviews.API.Controllers
             /*
             => expressão lambida p => p.Id == id
             */
-            var product = _dbContext.Products.SingleOrDefault(p => p.Id == id);
+            var product = _dbContext.Products.Include(p => p.Reviews).SingleOrDefault(p => p.Id == id);
             if (product == null)
             {
                 return NotFound();
@@ -65,6 +66,7 @@ namespace DevReviews.API.Controllers
             var product = new Product(model.Title, model.Description, model.Price);
 
             _dbContext.Products.Add(product);
+            _dbContext.SaveChanges();
 
             return CreatedAtAction(nameof(GetById), new { id = 1 }, model);
         }
@@ -88,6 +90,7 @@ namespace DevReviews.API.Controllers
             }
 
             product.Update(model.Description, model.Price);
+            _dbContext.SaveChanges();
 
             return NoContent();
         }

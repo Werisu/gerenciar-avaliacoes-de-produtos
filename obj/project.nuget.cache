@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/ZZJDZe6mvwEhk3/vpVXu4vOHdR13leb08BBIRgfqUyH/LyE3fXY5ws9GQyBKhMVuZNYnuG2NKHAHAyAiYHyxg==",
+  "dgSpecHash": "ipp/DyIixxBoothBEnkzxlSUGJDAIMbHp32ZtEraDE+8HM/giq7eZkKDY+Wuf6yJaI/fylGSusvJYFDz12UxJA==",
   "success": true,
-  "projectFilePath": "/home/ti/DevReviews.API/DevReviews.API.csproj",
+  "projectFilePath": "/home/ti/gerenciarAvaliacoesDeProdutos/DevReviews.API.csproj",
   "expectedPackageFiles": [
     "/home/ti/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/home/ti/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

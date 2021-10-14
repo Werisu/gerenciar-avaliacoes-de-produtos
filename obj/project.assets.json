@@ -6042,11 +6042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ti/DevReviews.API/DevReviews.API.csproj",
+      "projectUniqueName": "/home/ti/gerenciarAvaliacoesDeProdutos/DevReviews.API.csproj",
       "projectName": "DevReviews.API",
-      "projectPath": "/home/ti/DevReviews.API/DevReviews.API.csproj",
+      "projectPath": "/home/ti/gerenciarAvaliacoesDeProdutos/DevReviews.API.csproj",
       "packagesPath": "/home/ti/.nuget/packages/",
-      "outputPath": "/home/ti/DevReviews.API/obj/",
+      "outputPath": "/home/ti/gerenciarAvaliacoesDeProdutos/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ti/.nuget/NuGet/NuGet.Config"
@@ -6114,7 +6114,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/144/sdk/5.0.402/RuntimeIdentifierGraph.json"
       }
     }
   }
