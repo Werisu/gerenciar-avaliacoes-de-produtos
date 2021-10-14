@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ti/gerenciarAvaliacoesDeProdutos/DevReviews.API.csproj": {}
+    "/home/ti/GerenciarAvaliacoesDeProdutos/DevReviews.API.csproj": {}
   },
   "projects": {
-    "/home/ti/gerenciarAvaliacoesDeProdutos/DevReviews.API.csproj": {
+    "/home/ti/GerenciarAvaliacoesDeProdutos/DevReviews.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ti/gerenciarAvaliacoesDeProdutos/DevReviews.API.csproj",
+        "projectUniqueName": "/home/ti/GerenciarAvaliacoesDeProdutos/DevReviews.API.csproj",
         "projectName": "DevReviews.API",
-        "projectPath": "/home/ti/gerenciarAvaliacoesDeProdutos/DevReviews.API.csproj",
+        "projectPath": "/home/ti/GerenciarAvaliacoesDeProdutos/DevReviews.API.csproj",
         "packagesPath": "/home/ti/.nuget/packages/",
-        "outputPath": "/home/ti/gerenciarAvaliacoesDeProdutos/obj/",
+        "outputPath": "/home/ti/GerenciarAvaliacoesDeProdutos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ti/.nuget/NuGet/NuGet.Config"

@@ -35,6 +35,8 @@ namespace DevReviews.API.Models
             RegisteredAt = registeredAt;
         }
 
+        public ProductReviewViewModel(){}
+
         public int Id { get; private set; }
         public string Author { get; private set; }
         public int Ratibng { get; private set; }

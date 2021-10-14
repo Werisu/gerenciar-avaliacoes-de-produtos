@@ -1,6 +1,7 @@
 using AutoMapper;
 using DevReviews.API.Entities;
 using DevReviews.API.Models;
+using gerenciarAvaliacoesDeProdutos.Models;
 
 namespace DevReviews.API.Profiles
 {
@@ -9,6 +10,8 @@ namespace DevReviews.API.Profiles
         public ProductProfile()
         {
             CreateMap<ProductReview, ProductReviewViewModel>();
+            CreateMap<ProductReview, ProductReviewDetailsViewModel>();
+
             CreateMap<Product, ProductViewModel>();
             CreateMap<Product, ProductDetailsViewModel>();
         }
