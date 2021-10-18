@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using DevReviews.API.Entities;
 using Microsoft.EntityFrameworkCore;
 

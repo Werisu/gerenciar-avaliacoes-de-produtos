@@ -1,13 +1,10 @@
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using DevReviews.API.Entities;
 using DevReviews.API.Models;
-using DevReviews.API.Persistence;
 using gerenciarAvaliacoesDeProdutos.Models;
 using GerenciarAvaliacoesDeProdutos.Persistence.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace DevReviews.API.Controllers
 {
