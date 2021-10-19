@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevReviews.API</name>
+    </assembly>
+    <members>
+        <member name="M:DevReviews.API.Controllers.ProductsController.Post(DevReviews.API.Models.AddProductInputModel)">
+            <summary>Cadastro de Produto</summary>
+            <remarks>Requisição:
+            {
+                "title": "Um chinelo top",
+                "description": "Um chinelo de marca",
+                "proce": 100
+            }
+            </remarks>
+            <param name="model">Objeto com dados de cadastro de produto</param>
+            <response code="201">Sucesso</response>
+            <response code="400">Dados inválidos</response>
+        </member>
+    </members>
+</doc>

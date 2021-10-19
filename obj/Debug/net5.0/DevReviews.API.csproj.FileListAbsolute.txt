@@ -125,3 +125,5 @@
 /home/ti/gerenciarAvaliacoesDeProdutos/obj/Debug/net5.0/ref/DevReviews.API.dll
 /home/ti/gerenciarAvaliacoesDeProdutos/obj/Debug/net5.0/DevReviews.API.pdb
 /home/ti/gerenciarAvaliacoesDeProdutos/obj/Debug/net5.0/DevReviews.API.genruntimeconfig.cache
+/home/ti/GerenciarAvaliacoesDeProdutos/bin/Debug/net5.0/DevReviews.API.xml
+/home/ti/GerenciarAvaliacoesDeProdutos/obj/Debug/net5.0/DevReviews.API.xml

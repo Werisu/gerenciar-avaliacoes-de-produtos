@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Reflection;
 using DevReviews.API.Persistence;
 using DevReviews.API.Profiles;
 using GerenciarAvaliacoesDeProdutos.Persistence.Repositories;
@@ -36,18 +38,42 @@ namespace DevReviews.API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "DevReviews.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "DevReviews.API", 
+                    Version = "v1",
+                    Description = "uma API REST completa de gerenciamento de produtos e suas avaliações de um e-Commerce.",
+                    Contact = new OpenApiContact {
+                        Name = "Wellysson Nascimento Rocha",
+                        Email = "wellysson35@gmail.com",
+                    } 
+                    });
+                    
+                    /*
+                    xmlFile: estou dizendo aonde está o arquivo que vai
+                    ser quando gerar o swagger, para carregar
+                    as configurações
+                    */
+                    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                    /*
+                    xmlPath: caminho do xml
+                    */
+                    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                    /*
+                    incluir os comentários xml
+                    */
+                    c.IncludeXmlComments(xmlPath);
             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DevReviews.API v1"));
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DevReviews.API v1"));
             }
 
             app.UseHttpsRedirection();

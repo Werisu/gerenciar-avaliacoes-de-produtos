@@ -4,6 +4,7 @@ using AutoMapper;
 using DevReviews.API.Entities;
 using DevReviews.API.Models;
 using GerenciarAvaliacoesDeProdutos.Persistence.Repositories;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevReviews.API.Controllers
@@ -56,7 +57,20 @@ namespace DevReviews.API.Controllers
         }
 
         // POST para api/products
+        /// <summary>Cadastro de Produto</summary>
+        /// <remarks>Requisição:
+        /// {
+        ///     "title": "Um chinelo top",
+        ///     "description": "Um chinelo de marca",
+        ///     "proce": 100
+        /// }
+        /// </remarks>
+        /// <param name="model">Objeto com dados de cadastro de produto</param>
+        /// <response code="201">Sucesso</response>
+        /// <response code="400">Dados inválidos</response>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Post(AddProductInputModel model)
         {
             // se tiver erros de validação retornar bad request
