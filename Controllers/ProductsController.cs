@@ -6,6 +6,7 @@ using DevReviews.API.Models;
 using GerenciarAvaliacoesDeProdutos.Persistence.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace DevReviews.API.Controllers
 {
@@ -76,6 +77,8 @@ namespace DevReviews.API.Controllers
             // se tiver erros de validação retornar bad request
             // string title, string description, decimal price
             var product = new Product(model.Title, model.Description, model.Price);
+
+            Log.Information("Método de Cadastro de Produto chamado");
 
             await _repository.AddAsync(product);
 
