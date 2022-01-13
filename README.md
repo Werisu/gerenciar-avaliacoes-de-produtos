@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DevReviews - Jornada .NET Direto ao Ponto
 
 Foi desenvolvida uma API REST completa de gerenciamento de produtos e suas avaliações de um e-Commerce. 
@@ -18,7 +17,7 @@ Foi desenvolvida uma API REST completa de gerenciamento de produtos e suas avali
 ## Funcionalidades
 - Cadastro, Listagem, Detalhes, Atualização e Remoção de Produto.
 - Cadastro e Detalhes de uma avaliação
-=======
+
+
 # gerenciarAvaliacoesDeProdutos
 Será desenvolvida uma API REST completa do zero, com diversos endpoints (pontos de acesso). Algumas tecnologias que serão abordadas:  - Linguagem C# e framework .NET 5 - Padrão Repository com Entity FrameWork Core e Azure SQL Server para acesso a dados - AutoMapper, Logs com Serilog, documentação de APIs com Swagger  Criaremos juntos uma aplicação responsável por gerenciar avaliações de produtos de um e-commerce com funcionalidades de:  - Cadastro, atualização, listagem e detalhes de produtos - Cadastro e detalhes de uma avaliação  👨‍💻 Estou ansioso para continuar a jornada 🚀  #azure #commerce #framework #cloud
->>>>>>> e5d2405fe216f283cf0ac9e5f1021985206157cc
